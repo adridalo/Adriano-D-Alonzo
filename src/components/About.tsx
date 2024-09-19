@@ -18,7 +18,7 @@ const About = () => {
 
         const currentRef = aboutRef.current
         if(currentRef) {
-            observer.observe(aboutRef.current)
+            observer.observe(currentRef)
         }
 
         return () => {
