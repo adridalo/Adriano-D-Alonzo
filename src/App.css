@@ -4,6 +4,10 @@
   font-family: "SUSE", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: bisque;
   color: rgb(252, 52, 105);
@@ -13,6 +17,12 @@ body {
 #name-header {
   text-align: center;
   font-size: 5rem;
+  animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 #about-section {
@@ -44,10 +54,38 @@ body {
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 1s ease, transform 1s ease;
-  margin-top: 100vh;
+  margin-top: 50%;
 }
 
 #about-container.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.internal-link {
+  animation: fadeIn 0.5s;
+  color: rgb(252, 52, 105);
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#back-to-top {
+  text-align: center;
+}
+
+#navbar a:hover {
+  color: rgb(174, 38, 74);
+  transition: ease-in 0.3s;
+}
+
+#navbar a:active {
+  color: rgb(113, 25, 49);
+  transition: ease-in 0.3s;
 }
