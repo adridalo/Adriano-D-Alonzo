@@ -7,10 +7,12 @@
 body {
   background-color: bisque;
   color: rgb(252, 52, 105);
+  user-select: none;
 }
 
 #name-header {
   text-align: center;
+  font-size: 5rem;
 }
 
 #about-section {
@@ -25,4 +27,27 @@ body {
 #about-section #splash {
   width: 30%;
   border-radius: 50%;
+}
+
+
+#about-section #about-info {
+  margin: 3rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+#about-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
+  margin-top: 100vh;
+}
+
+#about-container.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
