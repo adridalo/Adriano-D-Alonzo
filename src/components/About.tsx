@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from "react";
 const About = () => {
 
     const [isVisible, setIsVisible] = useState(false)
-    const aboutRef = useRef()
+    const aboutRef = useRef<HTMLDivElement>(null)
 
     useEffect(() => {
         const observer = new IntersectionObserver( entries => {
@@ -15,13 +15,14 @@ const About = () => {
             threshold: 0.5
         })
 
-        if(aboutRef.current) {
+        const currentRef = aboutRef.current
+        if(currentRef) {
             observer.observe(aboutRef.current)
         }
 
         return () => {
-            if(aboutRef.current) {
-                observer.unobserve(aboutRef.current)
+            if(currentRef) {
+                observer.unobserve(currentRef)
             }
         }
     }, [])
