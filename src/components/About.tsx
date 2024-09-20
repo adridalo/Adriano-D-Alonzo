@@ -34,7 +34,7 @@ const About = () => {
             className={isVisible ? "visible" : ""}
             ref={aboutRef}
         >
-            <h1 >About Me</h1>
+            <h1>About Me</h1>
             <div id="about-section">
                 <img 
                     src="./images/splash.jpg" 

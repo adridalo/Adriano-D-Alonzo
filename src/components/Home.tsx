@@ -1,6 +1,7 @@
 import '../App.css'
 import About from './About'
 import Nav from './Nav'
+import Projects from './Projects'
 
 function Home() {
 
@@ -9,7 +10,8 @@ function Home() {
       <h1 id='name-header'>Adriano D'Alonzo</h1>
       <Nav />
       <About />
-      <p id='back-to-top'><a className='internal-link' href='#name-header'>Back to Top</a></p>
+      <Projects />
+      <p id='back-to-top'><a className='internal-link' href='#top'>Back to Top</a></p>
     </div>
   )
 }
