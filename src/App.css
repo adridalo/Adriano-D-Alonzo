@@ -18,7 +18,6 @@ body {
   text-align: center;
   font-size: 5rem;
   animation: fadeIn 1s;
-  color: black;
 }
 
 @keyframes fadeIn {
