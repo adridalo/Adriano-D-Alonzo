@@ -18,6 +18,7 @@ body {
   text-align: center;
   font-size: 5rem;
   animation: fadeIn 1s;
+  color: black;
 }
 
 @keyframes fadeIn {
@@ -42,7 +43,7 @@ body {
 
 #about-section #about-info {
   margin: 3rem;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: black;
   text-align: center;
 }
@@ -114,4 +115,8 @@ body {
 
 .project-demo {
   width: 25%;
+}
+
+.project-description {
+  color: black;
 }
