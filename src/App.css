@@ -10,7 +10,7 @@ html {
 
 body {
   background-color: bisque;
-  color: rgb(252, 52, 105);
+  color: rgb(252, 52, 59);
   user-select: none;
 }
 
@@ -70,7 +70,7 @@ body {
 
 .internal-link, a {
   animation: fadeIn 0.5s;
-  color: rgb(252, 52, 105);
+  color: rgb(252, 52, 59);
   text-decoration: none;
   font-size: 1.5rem;
   font-weight: bold;
