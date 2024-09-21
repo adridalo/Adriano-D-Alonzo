@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  background-color: rgb(196, 255, 252);
+  background-color: rgb(185, 255, 252);
   color: rgb(252, 52, 59);
   user-select: none;
 }
@@ -42,7 +42,8 @@ body {
 
 #about-section #about-info {
   margin: 3rem;
-  font-size: 1rem;
+  font-size: 1.5rem;
+  color: black;
   text-align: center;
 }
 
