@@ -91,7 +91,7 @@ body {
   transition: ease-in 0.3s;
 }
 
-.project:nth-child(odd) h2 {
+/* .project:nth-child(odd) h2 {
   text-align: left;
 }
 
@@ -102,7 +102,7 @@ body {
 .project:nth-child(even) img {
   display: block;
   margin-left: auto;
-}
+} */
 
 .project {
   width: 70%;
